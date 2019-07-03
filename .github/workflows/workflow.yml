@@ -1,6 +1,7 @@
 name: Node.js
 on: 
-  schedule: (*/1 * * * *)
+  schedule:
+  - cron: "*/1 * * * *"
 jobs:
 
   build:
