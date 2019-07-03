@@ -1,5 +1,6 @@
 name: Node.js
-on: [push, schedule(*/15 * * * *)]
+on: 
+  schedule: (*/1 * * * *)
 jobs:
 
   build:
