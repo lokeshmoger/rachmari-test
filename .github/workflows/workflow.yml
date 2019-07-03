@@ -1,5 +1,7 @@
-name: Node.js
-on: 
+name: Node.js 
+on:
+  schedules:
+  - cron: "*/5 * * * *"
   schedules:
   - cron: "*/1 * * * *"
 jobs:
