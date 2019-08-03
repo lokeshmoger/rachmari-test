@@ -4,6 +4,7 @@ jobs:
 
   hello_world_job:
     name: Hi there!
+    runs-on: ubuntu-latest
     steps:
     - name: Hello world action
       uses: bbq-beets/hello-world-action@master
