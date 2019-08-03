@@ -4,7 +4,7 @@
 
 ![demo](https://user-images.githubusercontent.com/27806/52508405-3c793a80-2bba-11e9-9f05-aa3e81ca5f17.gif)
 
-## Using this Action
+## Using this Action . 
 
 In your workflow:
 
