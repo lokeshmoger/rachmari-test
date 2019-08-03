@@ -3,7 +3,7 @@ on: [push]
 jobs:
 
   hello_world_job:
-    name: Hi there!
+    name: Hi there :wave:
     runs-on: ubuntu-latest
     steps:
     - name: Hello world action
