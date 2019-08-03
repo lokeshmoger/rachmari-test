@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Hello world action
-      uses: actions/hello-world-action@master
+      uses: bbq-beets/hello-world-action@master
       with:
         who-to-greet: Rachael 
