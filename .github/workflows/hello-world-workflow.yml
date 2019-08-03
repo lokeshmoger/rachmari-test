@@ -9,4 +9,4 @@ jobs:
     - name: Hello world action
       uses: bbq-beets/hello-world-action@master
       with:
-        who-to-greet: Rachael
+        who-to-greet: Rachael 
