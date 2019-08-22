@@ -6,8 +6,5 @@ jobs:
     name: Hi there
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Hello world action
-      uses: bbq-beets/hello-world-action@master
-      with:
-        who-to-greet: Rachael 
+      - if: github.event_name == pull_request && github.event.action == unassigned
+        run: echo This event is an unassigned pull request.
