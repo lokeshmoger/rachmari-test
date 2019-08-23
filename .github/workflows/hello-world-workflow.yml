@@ -1,13 +1,17 @@
+name: Greeting from Mona
+
 on: push
 
 jobs:
-
-  hello_world_job:
-    name: Hi there
+  my-job:
+    name: My Job
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Hello world action
-      uses: bbq-beets/hello-world-action@master
-      with:
-        who-to-greet: Rachael 
+    - name: Print a greeting
+      env:
+        MY_VAR: Hi there :wave:, my name is
+        FIRST_NAME: Mona
+        MIDDLE_NAME: The
+        LAST_NAME: Octocat
+      run: |
+        echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME
