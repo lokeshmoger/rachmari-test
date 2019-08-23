@@ -11,4 +11,7 @@ jobs:
         node: [6, 8, 10]
     steps:
       - run: echo Hello World
-     
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(matrix) }}
+        run: echo "$GITHUB_CONTEXT"
