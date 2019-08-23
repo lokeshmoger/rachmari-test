@@ -4,10 +4,10 @@ jobs:
 
   hello_world_job:
     name: Hi there
-    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os: [ubuntu-14.04, ubuntu-18.04]
+        node: [6, 8, 10]
     steps:
-    - uses: actions/checkout@master
-    - name: Hello world action
-      uses: bbq-beets/hello-world-action@master
-      with:
-        who-to-greet: Rachael 
+      - run: echo Hello World
+     
