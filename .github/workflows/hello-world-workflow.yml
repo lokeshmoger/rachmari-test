@@ -7,6 +7,7 @@ jobs:
     name: My Job
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@master
     - name: Print a greeting
       env:
         MY_VAR: Hi there! My name is
@@ -16,4 +17,4 @@ jobs:
         CAN_YOU_SEE_THIS: ${{ secrets.CAN_YOU_SEE_THIS }}
       run: |
         echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME. $CAN_YOU_SEE_THIS
-    - run: pwd
+    - run: pwd; ls
