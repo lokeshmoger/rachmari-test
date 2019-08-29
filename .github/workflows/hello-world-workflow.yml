@@ -3,7 +3,7 @@ name: Greeting from Mona
 on: 
   push:
     branches:
-      - rachmari-patch-2
+      - '!rachmari-patch-2'
   
 jobs:
   my-job:
