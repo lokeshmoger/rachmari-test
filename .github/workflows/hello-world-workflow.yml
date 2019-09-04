@@ -17,5 +17,6 @@ jobs:
         CAN_YOU_SEE_THIS: ${{ secrets.CAN_YOU_SEE_THIS }}
       run: |
         echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME. $CAN_YOU_SEE_THIS
-    - run: print(os.environ['PATH'])
+    - name: Display the path
+      run: print(os.environ['PATH'])
       shell: python
