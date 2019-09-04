@@ -1,3 +1,5 @@
+![](https://github.com/bbq-beets/rachmari-test/workflows/hello-world-workflow/badge.svg)
+
 # Notify issue author
 
 > A **GitHub Action** that pings you on issues you opened when they get closed! :zap:
