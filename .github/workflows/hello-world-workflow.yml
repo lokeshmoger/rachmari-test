@@ -1,3 +1,4 @@
+name: Greet everyone
 on: push
 
 jobs:
