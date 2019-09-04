@@ -18,5 +18,7 @@ jobs:
       run: |
         echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME. $CAN_YOU_SEE_THIS
     - name: Display the path
-      run: print(os.environ['PATH'])
+      run: |
+        import os
+        print(os.environ['PATH'])
       shell: python
