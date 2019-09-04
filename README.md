@@ -1,5 +1,5 @@
 
-![](https://github.com/bbq-beets/rachmari-test/workflows/Hi%20there/badge.svg)
+![](https://github.com/bbq-beets/rachmari-test/workflows/Greet%20everyone/badge.svg)
 
 # Notify issue author
 
