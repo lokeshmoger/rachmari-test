@@ -1,8 +1,5 @@
 
-<p align="left">
-  <a href="https://github.com/bbq-beets/rachmari-test"><img alt="GitHub Actions status" src="https://github.com/bbq-beets/rachmari-test/workflows/Hi%20there/badge.svg"></a>
-</p>
-
+![](https://github.com/bbq-beets/rachmari-test/workflows/Hi%20there/badge.svg)
 
 # Notify issue author
 
