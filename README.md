@@ -1,4 +1,4 @@
-![](https://github.com/bbq-beets/rachmari-test/workflows/.github/workflows/hello-world-workflow.yml/badge.svg)
+![](https://github.com/bbq-beets/rachmari-test/workflows/Hi%20there/badge.svg)
 
 # Notify issue author
 
