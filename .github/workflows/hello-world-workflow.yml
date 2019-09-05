@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo Hello Mona Lisa Octocat
-        if: github.event.pull_request.merged == true
+        if: github.event.pull_request.merged == false
