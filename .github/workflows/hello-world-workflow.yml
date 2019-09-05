@@ -1,4 +1,4 @@
-name: Greet everyone
+name: Greet Everyone
 on: push
 
 jobs:
@@ -8,7 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Hello world action
-      uses: bbq-beets/hello-world-action@master
-      with:
-        who-to-greet: Rachael 
+    - run: echo Hello Mona Lisa Octocat
