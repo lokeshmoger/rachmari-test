@@ -1,7 +1,7 @@
 
 ![](https://github.com/bbq-beets/rachmari-test/workflows/Greet%20everyone/badge.svg)
 
-# Notify issue author . 
+# Notify issue author
 
 > A **GitHub Action** that pings you on issues you opened when they get closed! :zap:
 
