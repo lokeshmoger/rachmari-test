@@ -1,5 +1,7 @@
 name: Greet Everyone
-on: push
+on: 
+  pull_request:
+    types: [closed]
 
 jobs:
 
@@ -7,5 +9,7 @@ jobs:
     name: Hi there
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - run: echo Hello Mona Lisa Octocat
+      - uses: actions/checkout@master
+        if: github.event.pull_request.merged == true
+      - run: echo Hello Mona Lisa Octocat
+        if: github.event.pull_request.merged == true
