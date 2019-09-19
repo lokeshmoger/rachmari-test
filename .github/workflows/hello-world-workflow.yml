@@ -11,3 +11,6 @@ jobs:
     steps:
       - run: echo Hello Mona Lisa Octocat
         if: github.event.pull_request.merged == false
+      - run: |
+          echo $GITHUB_REF
+          echo $GITHUB_SHA
