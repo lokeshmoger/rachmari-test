@@ -1,4 +1,6 @@
 
+:wave: 
+
 ![](https://github.com/bbq-beets/rachmari-test/workflows/Greet%20everyone/badge.svg)
 
 # Notify issue author 
