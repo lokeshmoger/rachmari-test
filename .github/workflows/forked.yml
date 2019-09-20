@@ -1,0 +1,14 @@
+name: pull_request test
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - run: |
+        echo "Ref: $GITHUB_REF"
+        echo "Sha: $GITHUB_SHA"
+    - run: ls
+    - run: cat $GITHUB_EVENT_PATH
+    - run: |
+        echo "PR number: `jq '.number' $GITHUB_EVENT_PATH`"
