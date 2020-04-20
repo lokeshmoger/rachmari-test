@@ -16,8 +16,9 @@ jobs:
   update_graphql_files:
     runs-on: ubuntu-latest
     steps:
-    - if: ${{ env.FREEZE != 'true' }}
-      name: Checkout
+    - if: ${{ env.FREEZE == 'true' }}
+      run: exit 1
+    - name: Checkout
       uses: actions/checkout@v2
     - name: Step 1
       run: echo 'Step 1'
