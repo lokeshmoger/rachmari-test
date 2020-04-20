@@ -24,6 +24,10 @@ jobs:
       run: echo 'Step 1'
     - name: Step 2
       run: echo 'Step 2'
+    - name: Dump env vars
+      run: |
+        echo GITHUB_EVENT_PATH: $GITHUB_EVENT_PATH
+        echo GITHUB_EVENT_NAME: $GITHUB_EVENT_NAME
     - if: ${{ failure() }}
       name: Check failure
       run: echo 'Failure step 3'
