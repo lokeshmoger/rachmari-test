@@ -1,0 +1,28 @@
+name: Update GraphQL files
+
+# **IMPORTANT:** Do not remove or change the FREEZE environment variable set here.
+# This workflow runs every hour. To temporarily disable it (for example, during
+# a docs freeze), add a secret to the help-docs repo settings called `FREEZE`
+# with a value of `true`. To reenable GraphQL updates, delete the secret in
+# the repo settings.
+env:
+  FREEZE: ${{ secrets.freeze }}
+
+on:
+  schedule:
+    - cron:  "* * * * *" # run every hour
+
+jobs:
+  update_graphql_files:
+    runs-on: ubuntu-latest
+    steps:
+    - if: ${{ env.FREEZE != 'true' }}
+      name: Checkout
+      uses: actions/checkout@v2
+    - name: Step 1
+      run: echo 'Step 1'
+    - name: Step 2
+      run: echo 'Step 2'
+    - if: ${{ failure() }}
+      name: Check failure
+      run: echo 'Failure step 3'
