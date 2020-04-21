@@ -8,9 +8,9 @@ name: Update GraphQL files
 env:
   FREEZE: ${{ secrets.freeze }}
 
-on:
-  schedule:
-    - cron:  "* * * * *" # run every hour
+#on:
+#  schedule:
+#    - cron:  "* * * * *" # run every hour
 
 jobs:
   update_graphql_files:
