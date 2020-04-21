@@ -27,7 +27,7 @@ jobs:
     - name: Dump env vars
       run: |
         echo GITHUB_EVENT_PATH: $GITHUB_EVENT_PATH
-        echo GITHUB_EVENT_NAME: $GITHUB_EVENT_NAME
+        cat /home/runner/work/_temp/_github_workflow/event.json
     - if: ${{ failure() }}
       name: Check failure
       run: echo 'Failure step 3'
