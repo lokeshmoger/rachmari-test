@@ -1,7 +1,7 @@
 {
   "name": "notify-issue-author",
   "version": "1.0.0",
-  "description": "A GitHub Action that notifies the issue author when an issue is closed.",
+  "description": "A GitHub Action that notifies the issue author when an issue is closed. :metal:",
   "author": "",
   "main": "entrypoint.js",
   "license": "CC0-1.0",
