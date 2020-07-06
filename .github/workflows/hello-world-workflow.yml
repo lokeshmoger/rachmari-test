@@ -17,3 +17,5 @@ jobs:
         env:
           GITHUB_CONTEXT: ${{ toJson(github.event) }}
         run: echo "$GITHUB_CONTEXT"
+      - name: Dump event file
+        run: cat ${{github.event_path}}
