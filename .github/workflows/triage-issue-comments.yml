@@ -22,10 +22,18 @@ jobs:
           const repo = context.payload.repository.name
           const org = context.payload.repository.owner.login
           const actor = context.actor
-          const collaboratorStatus = await github.request('GET /repos/{owner}/{repo}/collaborators/{username}', {
-            owner: org,
-            repo: repo,
-            username: actor
-          })
+          let collaboratorStatus = ''
+          try {
+            collaboratorStatus = await github.request('GET /repos/{owner}/{repo}/collaborators/{username}', {
+              owner: org,
+              repo: repo,
+              username: actor
+            })
+          } catch (error) {
+            console.error(error);
+            // expected output: ReferenceError: nonExistentFunction is not defined
+            // Note - error messages will vary depending on browser
+          }
+          
           console.log(collaboratorStatus)
     
