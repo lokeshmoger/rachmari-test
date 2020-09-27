@@ -22,7 +22,7 @@ jobs:
           const repo = context.payload.repository.name
           const org = context.payload.repository.owner.login
           const actor = context.actor
-          const collaboratorStatus = await octokit.request('GET /repos/{owner}/{repo}/collaborators/{username}', {
+          const collaboratorStatus = await github.request('GET /repos/{owner}/{repo}/collaborators/{username}', {
             owner: org,
             repo: repo,
             username: actor
