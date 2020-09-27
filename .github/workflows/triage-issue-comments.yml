@@ -1,0 +1,31 @@
+name: Triage issue comments
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  triage-issue-comments:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Dump GitHub context
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: echo "$GITHUB_CONTEXT"
+    - name: Check if the event originated from a team member
+      uses: actions/github-script@v2.0.0
+      id: set-result
+      with:
+        github-token: ${{secrets.GITHUB_TOKEN}}
+        result-encoding: string
+        script: |
+          const repo = context.payload.repository.name
+          const org = context.payload.repository.owner.login
+          const actor = context.actor
+          const collaboratorStatus = await octokit.request('GET /repos/{owner}/{repo}/collaborators/{username}', {
+            owner: org,
+            repo: repo,
+            username: actor
+          })
+          console.log(collaboratorStatus)
+    
