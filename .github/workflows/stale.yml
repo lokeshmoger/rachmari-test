@@ -4,7 +4,7 @@ on:
 
 jobs:
   stale:
-    if: github.repository == 'github/docs'
+    if: github.repository == 'spacelysprocketsinc/rachmari-test'
     runs-on: ubuntu-latest
 
     steps:
