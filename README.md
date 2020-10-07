@@ -1,5 +1,5 @@
 
-:wave: :wave: :metal:
+:wave: :wave: :metal: :metal:
 
 ![](https://github.com/bbq-beets/rachmari-test/workflows/Greet%20everyone/badge.svg)
 
