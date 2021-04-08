@@ -7,7 +7,7 @@ const { Toolkit } = require('actions-toolkit');
 jest.mock('../lib/notify-issue-author');
 const notifyIssueAuthor = require('../lib/notify-issue-author');    
 
-const entrypoint = require('../entrypoint');
+const entrypoint = require('../entrypoint'); 
 
 describe('entrypoint', () => {
   afterEach(() => {
